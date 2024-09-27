@@ -1,0 +1,162 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #28292d;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    cursor: url('../assets/cursor3.svg'), auto !important;
+    background-image: url('../assets/Gigachad.gif');
+    user-select: none;
+    backdrop-filter: blur(25px);
+}
+
+.commonText {
+    color: #fff;
+}
+.system-bar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.logOut {
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    border: none;
+}
+
+.logOut:hover {
+    cursor: pointer;
+    background-color: red;
+}
+
+.current-time {
+    float: right;
+    color: #45f3ff;
+}
+
+.menuLogo {
+    width: 25px;
+    height: 25px;
+}
+
+.menuContainer {
+    width: 100px;
+    height: 30px;
+    padding-left: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: fixed;
+    bottom: 50px;
+    left: 0;
+    background-color: #333;
+    color: #fff;
+    max-height: 80vh;
+    overflow-y: auto;
+	z-index: 9999;
+}
+
+input {
+    background-color: transparent !important;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 10px;
+}
+
+.menu ul li a {
+    color: #45f3ff;
+    text-decoration: none;
+}
+
+.btn-save {
+    background-color: transparent;
+    border: #45f3ff 1px solid;
+    color: #45f3ff;
+}
+
+.btn-save:hover {
+    background-color: #45f3ff;
+    color: #28292d;
+}
+
+.user-table-container {
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
+.notification {
+    margin-top: 20px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    display: none;
+}
+
+.success {
+    background-color: green;
+}
+
+.error {
+    background-color: red;
+}
+
+.popup {
+    cursor: pointer;
+  }
+  
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 125%;
+    left: 20%;
+    margin-left: -80px;
+  }
+  
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 20%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
